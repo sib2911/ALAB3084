@@ -37,16 +37,26 @@
 // Be careful! If you set n to a number too large, your loop could take a long time to process.
 
 
-for (n = 1; n < 100; i++){
-    if (n % 2 == 0)
-        continue;
-} else if ( n % 3 == 0) {
-    continue;
-} else if (n % 5 == 0)
-    continue;
-    else if(n % 7 ==0){
-continue;
-    }else {
-        break;
-    } console.log(n)
+// for (n = 1; n <= 100; n++){
+//     if (n % 2 == 0 || n % 3 == 0 || n % 5 == 0 || n % 7 == 0){
+//         continue;
+//     } else {
+//         console.log(n)
+//     }
+// }
 
+//Part 3: Feeling Loopy
+// As a final task, solve the following practical problem regarding string processing.
+// Context: A CSV file, or “Comma-Separated Values” file is traditionally used to store tabular data. You may be familiar with CSVs through past use of programs such as Microsoft Excel or Google Sheets. While each of these programs save their data in different formats to preserve style (e.g., font color or cell backgrounds), at their core, they are storing CSV data.
+// CSV data looks like this:
+// ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26
+
+const csv = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26;"
+
+for ( c in csv){
+    if ( c == ","){
+        continue;
+    } else {
+
+    }
+} 
