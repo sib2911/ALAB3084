@@ -58,18 +58,39 @@ const newCell = ",";
 const newRow = "\n";
 const cell = []
 
-// sorting through commas where commas are skipped
-for (let i = 0; i < csv.length; i++) {
-    if (csv[i] == "," || csv[i] == "\n"){
-        continue;
-    } else {
+// // sorting through commas where commas are skipped
+// for (let i = 0; i < csv.length; i++) {
+//     if (csv[i] == ","){
+//         continue;
+//     } else {
         
-    }
-}
+//     } console.log(i)
+// }
 
-//sorting through \n
+str.split("\n")
+let cell;
+
+for (const i in str) {
+	
+	if (str[i] == ",") {
+		continue;
+	} else if (str[i] == "\n"){
+		continue;
+	} else if( i == str.length){
+		break;
+	}
+	 else{
+		cell = str
+	}
+		console.log(cell);
+
+// //sorting through \n
 // for (let j = 0; j < csv.length; j++){
 //     if (csv[j] == "\n"){
 //         continue;
 //     } console.log(csv)
 // }
+
+
+
+	
