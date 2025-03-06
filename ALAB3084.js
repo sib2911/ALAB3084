@@ -54,43 +54,18 @@
 const csv = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
 //i need 4 cells 5 rows
 // "," indicate a new cell meanwhile "\n" indicates a new row
-const newCell = ",";
-const newRow = "\n";
-const cell = []
+let array = csv.split("\n")
 
-// // sorting through commas where commas are skipped
-// for (let i = 0; i < csv.length; i++) {
-//     if (csv[i] == ","){
-//         continue;
-//     } else {
-        
-//     } console.log(i)
-// }
 
-str.split("\n")
-let cell;
-
-for (const i in str) {
+for (const i in csv) {
 	
-	if (str[i] == ",") {
+	if (csv[i] == ",") {
 		continue;
-	} else if (str[i] == "\n"){
-		continue;
-	} else if( i == str.length){
+	} else if( i == csv.length){
 		break;
 	}
 	 else{
-		cell = str
+		array = csv;
 	}
-		console.log(cell);
-
-// //sorting through \n
-// for (let j = 0; j < csv.length; j++){
-//     if (csv[j] == "\n"){
-//         continue;
-//     } console.log(csv)
-// }
-
-
-
-	
+		console.log(array);
+}
