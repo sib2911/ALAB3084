@@ -54,18 +54,25 @@
 const csv = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
 //i need 4 cells 5 rows
 // "," indicate a new cell meanwhile "\n" indicates a new row
-let array = csv.split("\n")
+let array1=[];
+// let array2 = [];
+
+// array1.forEach(element => array2[element]);
+
+// console.log(array2)
 
 
-for (const i in csv) {
+
+for (let i = 0; i < csv.length; i++) {
 	
-	if (csv[i] == ",") {
-		continue;
-	} else if( i == csv.length){
+	if (i == csv.length) {
 		break;
+	} else if ( csv[i] == ","){
+		continue;
 	}
-	 else{
-		array = csv;
+    array1 = csv.split("\n")
+	 console.log(array1)
+		
 	}
-		console.log(array);
-}
+		
+console.log(csv.length)
