@@ -54,8 +54,21 @@
 const csv = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
 //i need 4 cells 5 rows
 // "," indicate a new cell meanwhile "\n" indicates a new row
-let array1=[];
-// let array2 = [];
+let array1 = csv.split('\n');
+const rows = 5;
+const cols = 4;
+const array2 = [];
+
+//creating table array
+for (let i = 0; i < rows; i++){
+    array2[i] = [];
+    for (let j = 0; j < cols; j++) {
+        array2[i][j] = array1git ;
+    }
+}
+console.log(array2)
+//find a method to store each item in array1 into indexes of array2
+
 
 // array1.forEach(element => array2[element]);
 
@@ -63,16 +76,13 @@ let array1=[];
 
 
 
-for (let i = 0; i < csv.length; i++) {
+// for (let i = 0; i < csv.length; i++) {
 	
-	if (i == csv.length) {
-		break;
-	} else if ( csv[i] == ","){
-		continue;
-	}
-    array1 = csv.split("\n")
-	 console.log(array1)
+// 	if (i == csv.length) {
+// 		break;
+// 	} else if ( csv[i] == ","){
+// 		continue;
+// 	}
+//     
 		
-	}
-		
-console.log(csv.length)
+// 	
